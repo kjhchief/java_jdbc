@@ -27,7 +27,6 @@ public class SelectExample {
        		  .append(" FROM departments") 
 			  .append(" ORDER BY department_id"); 
 			pstmt = con.prepareStatement(sb.toString());
-			
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
 				int departmentId = rs.getInt("department_id");
